@@ -1,0 +1,16 @@
+.git
+.gitignore
+.pixi
+__pycache__
+*.pyc
+.ipynb_checkpoints
+data/
+*.fastq.gz
+*.fq.gz
+*.bam
+*.bam.bai
+*.h5ad
+*.mcool
+*.cool
+README.md
+compose.yml

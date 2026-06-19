@@ -1,0 +1,48 @@
+[workspace]
+authors = ["mbyamaguchi"]
+channels = ["conda-forge", "bioconda"]
+name = "bioenv1"
+platforms = ["linux-64"]
+version = "0.1.0"
+description = "single-cell / RNA-seq / Hi-C"
+
+[tasks]
+jupyter = "jupyter lab --ip=0.0.0.0 --no-browser --allow-root --IdentityProvider.token=''"
+
+[dependencies]
+python = "3.11.*"
+
+# --- 汎用データサイエンス ---
+numpy = "*"
+pandas = "*"
+scipy = "*"
+matplotlib = "*"
+seaborn = "*"
+jupyterlab = "*"
+ipykernel = "*"
+ipywidgets = "*"
+ 
+# --- シングルセル解析(scverseエコシステム) ---
+scanpy = "*"
+anndata = "*"
+pydeseq2 = "*"
+leidenalg = "*"
+python-igraph = "*"
+scikit-misc = "*"
+ 
+# --- RNA-seq(アライメント・QC・カウント) ---
+star = "*"
+salmon = "*"
+samtools = "*"
+subread = "*"          # featureCounts
+fastqc = "*"
+fastp = "*"
+multiqc = "*"
+ 
+# --- Hi-C ---
+cooler = "*"
+cooltools = "*"
+pairtools = "*"
+hicexplorer = "*"
+bwa = "*"
+bowtie2 = "*"
